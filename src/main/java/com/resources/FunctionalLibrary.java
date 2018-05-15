@@ -205,7 +205,6 @@ public class FunctionalLibrary {
 
 	public static void setText(WebElement element, String value) {
 		try {
-			element.clear();
 			element.sendKeys(value);
 			Reporter.addStepLogPass(value + " entered into textbox successfully" + element.toString());
 		} catch (Exception e) {
