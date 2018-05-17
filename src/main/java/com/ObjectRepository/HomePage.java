@@ -15,7 +15,7 @@ public class HomePage extends FunctionalLibrary {
 
 	@FindBy(id = "air-shopping-multicity-link")
 	private WebElement lnkMultiCity;
-	
+
 	@FindBy(id = "originCity")
 	private WebElement txtOriginCity;
 
@@ -27,6 +27,27 @@ public class HomePage extends FunctionalLibrary {
 
 	@FindBy(name = "findFlightsSubmit")
 	private WebElement btnFlightSubmit;
+
+	@FindBy(id = "paxCount-button")
+	private WebElement btn_paxCount;
+
+	@FindBy(xpath = "//ul[@id='paxCount-menu']//li[contains(text(),'$')]")
+	private WebElement drpdwn_paxCountMenu;
+
+	@FindBy(xpath = "//h1[text()='BOOK A TRIP']")
+	private WebElement headersearchResult;
+
+	public WebElement getheaderSearchResult() {
+		return headersearchResult;
+	}
+
+	public WebElement getbtnPaxCount() {
+		return btn_paxCount;
+	}
+
+	public WebElement getdrpdwnPaxCountMenu() {
+		return drpdwn_paxCountMenu;
+	}
 
 	public WebElement getBtnOneWay() {
 		return btnOneWay;

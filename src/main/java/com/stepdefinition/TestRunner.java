@@ -13,7 +13,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/feature/HomePage/TestCase1.feature",glue = { "com.stepdefinition" }, plugin = {
-		"com.resources.ExtentCucumberFormatter:"} )
+		"com.resources.ExtentCucumberFormatter:"},dryRun=false )
 
 public class TestRunner {
 
