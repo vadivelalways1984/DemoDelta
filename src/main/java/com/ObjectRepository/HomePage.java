@@ -23,7 +23,7 @@ public class HomePage extends FunctionalLibrary {
 	private WebElement txtdestinationCity;
 
 	@FindBy(name = "departureDate")
-	private WebElement txtdepartureDate;
+	private WebElement txtdepartureDate;          
 
 	@FindBy(name = "findFlightsSubmit")
 	private WebElement btnFlightSubmit;
