@@ -36,7 +36,32 @@ public class HomePage extends FunctionalLibrary {
 
 	@FindBy(xpath = "//h1[text()='BOOK A TRIP']")
 	private WebElement headersearchResult;
+	
+	@FindBy(id = "FLIFO_flightDate-button")
+	private WebElement btnflightdatestatus;
+	
+	@FindBy(xpath = "//ul[@id='FLIFO_flightDate-menu']//li[contains(text(),'$')]")
+	private WebElement drpdwn_flightDateMenu;
 
+	@FindBy(id = "FLIFO_flightNumber")
+	private WebElement txtflightnumstatus;
+	
+	@FindBy(id = "FLIFO_departureAirport")
+	private WebElement txtdepastatus;
+	
+	@FindBy(id = "FLIFO_arrivalAirport")
+	private WebElement txtarrivalstatus;
+	
+	@FindBy(xpath = "//input[@type='submit']")
+	private WebElement btnstatus;
+	
+	@FindBy(xpath = "//div[@id='flightn']/div")
+	private WebElement flightnum;
+	
+	@FindBy(xpath = "//span[@class='datapanelflstatusfont']")
+	private WebElement flightstatusdata;
+	
+	
 	public WebElement getheaderSearchResult() {
 		return headersearchResult;
 	}
