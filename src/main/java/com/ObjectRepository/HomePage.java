@@ -24,6 +24,9 @@ public class HomePage extends FunctionalLibrary {
 
 	@FindBy(name = "departureDate")
 	private WebElement txtdepartureDate;
+	
+	@FindBy(name = "returnDate")
+	private WebElement txtReturnDate;
 
 	@FindBy(name = "findFlightsSubmit")
 	private WebElement btnFlightSubmit;
@@ -36,6 +39,31 @@ public class HomePage extends FunctionalLibrary {
 
 	@FindBy(xpath = "//h1[text()='BOOK A TRIP']")
 	private WebElement headersearchResult;
+	
+	@FindBy(id="book-delta-vacations-content-trigger")
+	private WebElement btnVacationPackages;
+	
+	@FindBy(id="fromAirport")
+	private WebElement txtFromAirportVacationPckg;
+	
+	@FindBy(id="toAirport")
+	private WebElement txtToAirportVacationPckg;
+	
+	@FindBy(id="vacationsdepartureDate")
+	private WebElement txtVacationDepartDate;
+	
+	
+	@FindBy(id="vacationsreturnDate")
+	private WebElement txtVacationReturnDate;
+	
+	@FindBy(id="vacationsSubmit")
+	private WebElement btnVacationSubmit;
+	
+	
+	@FindBy(id="ck-banner-close")
+	private WebElement btnBannerClose;
+	
+	
 
 	public WebElement getheaderSearchResult() {
 		return headersearchResult;
@@ -75,6 +103,52 @@ public class HomePage extends FunctionalLibrary {
 
 	public WebElement getBtnFlightSubmit() {
 		return btnFlightSubmit;
+	}
+	
+
+	public WebElement getTxtReturnDate() {
+		return txtReturnDate;
+	}
+
+	public WebElement getBtn_paxCount() {
+		return btn_paxCount;
+	}
+
+	public WebElement getDrpdwn_paxCountMenu() {
+		return drpdwn_paxCountMenu;
+	}
+
+	public WebElement getHeadersearchResult() {
+		return headersearchResult;
+	}
+
+	public WebElement getBtnVacationPackages() {
+		return btnVacationPackages;
+	}
+
+	public WebElement getTxtFromAirportVacationPckg() {
+		return txtFromAirportVacationPckg;
+	}
+
+	public WebElement getTxtToAirportVacationPckg() {
+		return txtToAirportVacationPckg;
+	}
+
+	public WebElement getBtnVacationSubmit() {
+		return btnVacationSubmit;
+	}
+	
+
+	public WebElement getTxtVacationDepartDate() {
+		return txtVacationDepartDate;
+	}
+
+	public WebElement getTxtVacationReturnDate() {
+		return txtVacationReturnDate;
+	}
+
+	public WebElement getBtnBannerClose() {
+		return btnBannerClose;
 	}
 
 	public HomePage() {
