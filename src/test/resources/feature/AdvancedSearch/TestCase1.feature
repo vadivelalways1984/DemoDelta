@@ -9,3 +9,5 @@ Scenario Outline: Advanced Flight Search functionality for One-way
 	Examples:
 	|from|to|date|
 	|DAL|NYC|31-05-2018| 
+	
+	
