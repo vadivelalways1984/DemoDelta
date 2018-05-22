@@ -100,7 +100,7 @@ public class FunctionalLibrary {
 		int hour = now.getHourOfDay();
 		int minute = now.getMinuteOfHour();
 		int second = now.getSecondOfMinute();
-		String exec_StartTime = hour + ":" + minute + ":" + second;
+		String exec_StartTime = hour + ":"s + minute + ":" + second;
 		return exec_StartTime;
 	}
 
