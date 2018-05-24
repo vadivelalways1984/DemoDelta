@@ -63,6 +63,43 @@ public class HomePage extends FunctionalLibrary {
 	@FindBy(id="ck-banner-close")
 	private WebElement btnBannerClose;
 	
+	@FindBy(id = "FLIFO_flightDate-button")
+	private WebElement btnflightdatestatus;
+	
+	@FindBy(id = "FLIFO_flightDate")
+	private WebElement drpdwnflightdate;
+	
+	
+	@FindBy(xpath = "//ul[@id='FLIFO_flightDate-menu']//li[contains(text(),'$')]")
+	private WebElement drpdwn_flightDateMenu;
+
+	@FindBy(id = "FLIFO_flightNumber")
+	private WebElement txtflightnum;
+	
+	@FindBy(id = "FLIFO_departureAirport")
+	private WebElement txtdeparture;
+	
+	@FindBy(id = "FLIFO_arrivalAirport")
+	private WebElement txtarrival;
+	
+	@FindBy(xpath = "//input[@type='submit']")
+	private WebElement btnstatus;
+	
+	
+	@FindBy(xpath = "//div[@id='flightn']/div")
+	private WebElement flightnum;
+	
+	//if two flights are there like 2049
+	
+	@FindBy(id = "filghtdownarrowLink")
+	private WebElement flightdwnarrlink;
+	
+	@FindBy(xpath = "//span[@class='popoverLegflightStatus pull-right flightStatusGreen']")
+	private WebElement clkforstatus;
+	
+	@FindBy(xpath = "//span[@class='datapanelflstatusfont']")
+	private WebElement flightstatusdata;
+	
 	
 
 	public WebElement getheaderSearchResult() {

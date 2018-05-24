@@ -12,8 +12,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/feature/HomePage/TestCase1.feature",glue = { "com.stepdefinition" }, plugin = {
-		"com.resources.ExtentCucumberFormatter:"},dryRun=false )
+@CucumberOptions(features = "src\\test\\resources\\feature\\FlightSearch\\Test1.feature",glue = { "com.stepdefinition" }, plugin = {
+		"com.resources.ExtentCucumberFormatter:"},dryRun=true )
 
 public class TestRunner {
 
