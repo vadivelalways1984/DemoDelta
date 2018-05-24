@@ -12,7 +12,7 @@ Feature: Verify flight search functionality
 
     Examples: 
       | From | To  | Date      |
-      | ATL  | MSP | 5/18/2018 |
+      | ATL  | MSP | 5/21/2018 |
 
   Scenario Outline: Search result functionality for oneway with more than one passenger
     Given The user is in delta homepage
