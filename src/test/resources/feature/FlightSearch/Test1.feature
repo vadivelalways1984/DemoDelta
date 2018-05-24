@@ -6,8 +6,7 @@ Feature: Verify flight search functionality
     Given The user is in delta homepage
     When The user searches a flight for roundtrip for "<From>", "<To>" , "<Date>" and "<paxCount>"
     And The user clicks on findflight button
-    Then The user verifies the flight search results title
-    And The user should see the search results page
+    Then The user verifies flight search page
 
     Examples: 
       | From | To  | Date      | paxCount |
